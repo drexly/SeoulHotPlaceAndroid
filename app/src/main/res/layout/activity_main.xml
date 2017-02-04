@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    android:weightSum="1"
+    tools:context="com.seoulhot.hotple.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:layout_margin="18dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/logo"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_marginBottom="80dp"
+            android:layout_marginLeft="50dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:gravity="center_vertical"
+                android:layout_margin="10dp">
+
+                <com.seoulhot.hotple.SquareButton
+                    android:id="@+id/hotple"
+                    android:background="@drawable/hotple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:onClick="onClick"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:text="핫플 순위"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_margin="10dp">
+
+                <com.seoulhot.hotple.SquareButton
+                    android:id="@+id/chat"
+                    android:background="@drawable/chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:onClick="onClick"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="13dp"
+                    android:layout_margin="5dp"
+                    android:text="핫플 채팅"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_margin="10dp">
+
+                <com.seoulhot.hotple.SquareButton
+                    android:id="@+id/compare"
+                    android:background="@drawable/compare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="13dp"
+                    android:layout_margin="5dp"
+                    android:text="핫플 비교"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_margin="10dp">
+
+                <com.seoulhot.hotple.SquareButton
+                    android:id="@+id/fire"
+                    android:background="@drawable/fire"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="13dp"
+                    android:layout_margin="5dp"
+                    android:text="이 달의 불금"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginBottom="80dp"
+            android:layout_marginRight="50dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:gravity="center_vertical"
+                android:layout_margin="10dp">
+
+                <com.seoulhot.hotple.SquareButton
+                    android:id="@+id/coldple"
+                    android:background="@drawable/coldple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:onClick="onClick"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:text="콜플 순위"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:gravity="center_vertical"
+                android:layout_margin="10dp">
+
+                <com.seoulhot.hotple.SquareButton
+                    android:id="@+id/wherehotple"
+                    android:background="@drawable/where"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:onClick="onClick"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:text="여긴 핫플?"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:gravity="center_vertical"
+                android:layout_margin="10dp">
+
+                <com.seoulhot.hotple.SquareButton
+                    android:id="@+id/work"
+                    android:background="@drawable/work"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:onClick="onClick"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:text="통근 / 통학"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:gravity="center_vertical"
+                android:layout_margin="10dp">
+
+                <com.seoulhot.hotple.SquareButton
+                    android:id="@+id/develop"
+                    android:background="@drawable/develop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:onClick="onClick"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:text="개발자"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
